@@ -13,7 +13,7 @@ const ObjetosLiterales = () => {
     }
     return (
         <>
-            <h3>Objetos Literales</h3>
+            <h3>Objetos Literales e Interfaces</h3>
             <pre>{JSON.stringify(persona, null, 2)}</pre>
         </>
     )
