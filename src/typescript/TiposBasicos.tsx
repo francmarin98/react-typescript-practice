@@ -15,7 +15,6 @@ const TiposBasicos = () => {
         <Fragment>
             <h3>Tipos Básicos</h3>
             {nombre}, {edad}, {(estaActivo) ? 'Activo' : 'Inactivo'}
-            <hr/>
             <p>Poderes: {poderes.join(', ')}</p>
         </Fragment>
     )
