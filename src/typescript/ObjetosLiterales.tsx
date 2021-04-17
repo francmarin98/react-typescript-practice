@@ -1,4 +1,4 @@
-import { Persona } from '../models/Persona.model'
+import { Persona } from '../models/personaModel'
 
 //Componente
 const ObjetosLiterales = () => {
