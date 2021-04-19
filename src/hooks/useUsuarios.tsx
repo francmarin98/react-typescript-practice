@@ -23,9 +23,21 @@ export const useUsuarios = () => {
         if (data.length > 0) {
             //Establezco la data en el State
             setUsers(data);
-            pageRef.current++;
         } else {
-            alert('No hay más registros')
+            pageRef.current--;
+            alert('No hay más registros');
+        }
+    }
+
+    const paginaSiguiente = () => {
+        pageRef.current++;
+        fetchDataUsers();
+    }
+
+    const paginaAnterior = () => {
+        if (pageRef.current > 1) {
+            pageRef.current--;
+            fetchDataUsers();
         }
     }
 
@@ -37,6 +49,7 @@ export const useUsuarios = () => {
 
     return {
         users,
-        fetchDataUsers
+        paginaAnterior,
+        paginaSiguiente
     }
 }
