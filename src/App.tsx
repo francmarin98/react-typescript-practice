@@ -4,25 +4,28 @@ import { Funciones } from './typescript/Funciones'
 import ObjetosLiterales from './typescript/ObjetosLiterales'
 import TiposBasicos from './typescript/TiposBasicos'
 import { Login } from './components/Login';
+import { Usuario } from './components/Usuario';
 
 const App = () => {
   return (
     <div className="mt-2">
       <h1>Introducción a TypeScript</h1>
-      <hr/>
+      <hr />
       <TiposBasicos />
       <hr />
       <ObjetosLiterales />
-      <hr/>
+      <hr />
       <Funciones />
-      <br/>
+      <br />
       <h1>Hooks con TypeScript</h1>
-      <hr/>
+      <hr />
       <Contador />
-      <hr/>
+      <hr />
       <ContadorConHook />
-      <hr/>
+      <hr />
       <Login />
+      <hr />
+      <Usuario />
     </div>
   )
 }
